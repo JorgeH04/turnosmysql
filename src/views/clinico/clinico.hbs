@@ -1,0 +1,53 @@
+
+  
+  
+      <div id="pricing" class="pricing">
+      <div class="container">
+          <div class="row">
+                   {{#each clinico}}
+
+                <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="1.2s">
+                  <div class="packages">
+                 <article class="product">
+                <h3>        {{especialidad}}</h3>
+                  <h3>        {{medico}}</h3>
+                  <h4>${{horario}}</h4>
+                  
+        </div>              </article>
+                  </div>
+              </div>
+        {{/each}}
+  
+          </div>
+      </div>
+  </div>
+
+
+
+  <div class="col-md-4 mx-auto">
+    <div class="card text-center">
+      <div class="card-header">
+        <h3>Enviar el turno</h3>
+      </div>
+      <div class="card-body">
+        <form action="/turno/new-turno" method="POST">
+          <div class="form-group">
+            <input type="text" name="especialidad" class="form-control" placeholder="Especialidad" autofocus/>
+          </div>
+          <div class="form-group">
+            <input type="text" name="medico" class="form-control" placeholder="Médico" autofocus/>
+          </div>
+         <div class="form-group">
+            <input type="text" name="horario" class="form-control" placeholder="Horario" autofocus/>
+          </div>
+   
+          <div class="form-group">
+            <button class="btn btn-primary btn-block" type="submit">
+              Save
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  

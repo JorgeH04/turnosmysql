@@ -1,0 +1,23 @@
+<div class="col-md-4 mx-auto">
+
+    <div class="card">
+        <div class="card-body">
+            <form action="/edit/{{link.id}}" method="POST">
+                <div class="form-group">
+                    <input type="text" name="especialidad" class="form-control" placeholder="Especialidad" value="{{link.especialidad}}" autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="medico" class="form-control" placeholder="Médico" value="{{link.medico}}">
+                </div>
+                 <div class="form-group">
+                    <input type="text" name="horario" class="form-control" placeholder="Horario" value="{{link.horario}}">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success btn-block">
+                        Save
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
